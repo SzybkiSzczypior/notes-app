@@ -1,3 +1,8 @@
-import notesAPI from "notesAPI.js";
+import notesView from "/notesView.js";
 
-console.log(notesAPI.getAllNotes());
+const app = document.getElementById("app");
+const view = new notesView(app,{
+    onNoteSelect() {
+        console.log("note has been selected");
+    }
+})
