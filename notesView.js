@@ -16,5 +16,12 @@ export default class notesView {
             <textarea class="notes__body">Take Note...</textarea>
         </div> 
         `;
+        const btnAddNote = this.root.querySelector(".notes__add");
+        const inpTitle = this.root.querySelector(".notes__title");
+        const inpBody = this.root.querySelector("notes__body");
+        btnAddNote.addEventListener("click",() => {
+            this.onNoteAdd();
+
+        })
     }
 }
